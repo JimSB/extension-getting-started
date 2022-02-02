@@ -5,8 +5,31 @@
 </head>
 <body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
     <div id="app" class="full-height"></div>
+
     <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
+    <!-- If you use any external libraries, such as jQuery, you must include
+      them as part of your extension.  Twitch does not allow extensions to link
+      to external libraries. -->
+
+      <head>
+          <meta charset="utf-8" />
+          <meta name "viewport" content="width-width, initial-scale=1">
+          <meta name "description" content="A simple Strike demo.">
+          <meta name "auther" content="@jims">
+
+          <title> Simple Tipping Widget</title>
+
+          <link rel="stylesheet" href="https://cdn.lsdelivr.net/npm/bvlma@0.9.3/css/bulma.min.css" type="text/css">
+          <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+          <link href='http://localhost:3000/index/css' rel='stylesheet' type='text/css'>
+          <script type="text/javascript" src="https://localhost:3000/index.js" defer></script>
+      </head> 
+      <body> 
+          <div class="strike-widget" data-handle="jims" data-amount="2"/>
+      </body> 
+
+      </head>
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="viewer.js" type="text/javascript"></script>
     <h2>Hello, World!</h2>
     <p>Would you care to cycle a color?</p>
